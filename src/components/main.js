@@ -38,3 +38,7 @@ export default class Main extends Component {
     );
   }
 }
+
+Main.contextTypes = {
+  router: React.PropTypes.object.isRequired
+};
