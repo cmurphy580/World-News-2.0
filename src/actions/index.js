@@ -7,7 +7,7 @@ export const CHANGE_BOOLEAN = 'CHANGE_BOOLEAN';
 export const SEARCH_BOOLEAN = 'SEARCH_BOOLEAN';
 export const REFRESH_NEWS = 'REFRESH_NEWS';
 
-const API_KEY = '&apiKey=+++',
+const API_KEY = '&apiKey=3ff7d22ae888425aab3d1d350fb671c4',
       API_URL = 'https://newsapi.org/v2/top-headlines?',
       API_URL_SEARCH = 'https://newsapi.org/v2/everything?q=',
       API_URL_PROVIDER = 'https://newsapi.org/v2/top-headlines?sources=';
