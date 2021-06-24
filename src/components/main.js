@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import Header from './header';
 //import SelectMenu from './selectmenu';
@@ -21,7 +22,8 @@ export default class Main extends Component {
   }
   logout() {
     base.unauth();
-    this.props.history.push(`/`);
+    // this.props.history.push(`/`);
+    this.context.router.push(`/`);
   }
   render() {
     const logout = <MuiThemeProvider><RaisedButton backgroundColor="white" className="logout_button" onClick={this.logout}>Logout</RaisedButton></MuiThemeProvider>;
