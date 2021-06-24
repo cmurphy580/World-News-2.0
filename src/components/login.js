@@ -62,7 +62,8 @@ export default class Login extends Component {
     base.unauth();
     this.setState({ uid: null });
     localStorage.clear();
-    this.props.history.push(`/`);
+    // this.props.history.push(`/`);
+    this.context.router.push(`/`);
   }
   render() {
     const { uid, user } = this.state;
@@ -77,7 +78,8 @@ export default class Login extends Component {
         {logout}
       </div>
     }
-    this.props.history.push(`/user/${user}`);
+    // this.props.history.push(`/user/${user}`);
+    this.context.router.push(`/user/${user}`);
     return (
       <div className="loading_page">
         <p>Loading...</p>
@@ -85,3 +87,7 @@ export default class Login extends Component {
     )
   }
 }
+
+Login.contextTypes = {
+  router: React.PropTypes.object.isRequired
+};
