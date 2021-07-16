@@ -23,7 +23,7 @@
     "babel-preset-stage-1": "^6.1.18",
     "chai": "^3.5.0",
     "chai-jquery": "^2.0.0",
-    "jquery": "^2.2.1",
+    "jquery": "^3.5.0",
     "jsdom": "^8.1.0",
     "lodash": "^4.17.21",
     "material-components-web": "^0.28.0",
